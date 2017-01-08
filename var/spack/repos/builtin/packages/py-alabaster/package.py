@@ -25,7 +25,7 @@
 from spack import *
 
 
-class PyAlabaster(AutotoolsPackage):
+class PyAlabaster(PythonPackage):
     """Alabaster is a visually (c)lean, responsive, configurable theme
     for the Sphinx documentation system."""
 

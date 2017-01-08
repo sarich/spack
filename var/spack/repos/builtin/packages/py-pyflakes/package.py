@@ -26,7 +26,7 @@ from spack import *
 
 
 class PyPyflakes(PythonPackage):
-    """A simple program which checks Python source files for errors.."""
+    """A simple program that checks Python source files for errors.."""
 
     homepage = "https://github.com/PyCQA/pyflakes"
     url      = "https://github.com/PyCQA/pyflakes/archive/1.3.0.tar.gz"
