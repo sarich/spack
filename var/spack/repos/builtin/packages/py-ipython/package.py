@@ -37,3 +37,7 @@ class PyIpython(PythonPackage):
 
     depends_on('py-pygments', type=('build', 'run'))
     depends_on('py-setuptools', type=('build', 'run'))
+    depends_on('py-backports-shutil-get-terminal-size', when="^python@:3.2.999")
+    depends_on('py-pathlib2', when="^python@:3.3.999")
+    depends_on('py-pickleshare')
+    depends_on('py-simplegeneric')
