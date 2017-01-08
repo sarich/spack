@@ -25,7 +25,7 @@
 from spack import *
 
 
-class PyTraitlets(Package):
+class PyTraitlets(PythonPackage):
     """Traitlets Python config system"""
 
     homepage = "https://pypi.python.org/pypi/traitlets"
@@ -40,12 +40,7 @@ class PyTraitlets(Package):
     version('4.0.0', 'b5b95ea5941fd9619b4704dfd8201568')
     version('4.0',   '14544e25ccf8e920ed1cbf833852481f')
 
-    extends('python')
-
     depends_on('py-setuptools', type='build')
     depends_on('py-decorator', type=('build', 'run'))
-    depends_on('py-ipython-genutils')
-    depends_on('py-enum34', when='^python@:3.3')
-
-    def install(self, spec, prefix):
-        setup_py('install', '--prefix={0}'.format(prefix))
+    depends_on('py-ipython-genutils', type=('build', 'run'))
+    depends_on('py-enum34', when='^python@:3.3', type=('build', 'run'))
