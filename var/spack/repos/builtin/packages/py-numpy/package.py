@@ -26,7 +26,7 @@ from spack import *
 import platform
 
 
-class PyNumpy(Package):
+class PyNumpy(PythonPackage):
     """NumPy is the fundamental package for scientific computing with Python.
     It contains among other things: a powerful N-dimensional array object,
     sophisticated (broadcasting) functions, tools for integrating C/C++ and
@@ -46,7 +46,6 @@ class PyNumpy(Package):
     variant('blas',   default=True)
     variant('lapack', default=True)
 
-    extends('python')
     depends_on('python@2.6:2.8,3.2:')
     depends_on('py-nose', type='build')
     depends_on('py-setuptools', type='build')
