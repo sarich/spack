@@ -37,6 +37,6 @@ class PyCsvkit(PythonPackage):
     depends_on('py-dateutil', type=('build', 'run'))
     depends_on('py-dbf', type=('build', 'run'))
     depends_on('py-xlrd', type=('build', 'run'))
-    depends_on('py-SQLAlchemy', type=('build', 'run'))
+    depends_on('py-sqlalchemy', type=('build', 'run'))
     depends_on('py-six', type=('build', 'run'))
     depends_on('py-openpyxl', type=('build', 'run'))
