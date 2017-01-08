@@ -34,9 +34,9 @@ class PyCsvkit(PythonPackage):
 
     version('0.9.1', '48d78920019d18846933ee969502fff6')
 
-    depends_on('py-dateutil', type=nolink)
-    depends_on('py-dbf', type=nolink)
-    depends_on('py-xlrd', type=nolink)
-    depends_on('py-SQLAlchemy', type=nolink)
-    depends_on('py-six', type=nolink)
-    depends_on('py-openpyxl', type=nolink)
+    depends_on('py-dateutil', type=('build', 'run'))
+    depends_on('py-dbf', type=('build', 'run'))
+    depends_on('py-xlrd', type=('build', 'run'))
+    depends_on('py-SQLAlchemy', type=('build', 'run'))
+    depends_on('py-six', type=('build', 'run'))
+    depends_on('py-openpyxl', type=('build', 'run'))

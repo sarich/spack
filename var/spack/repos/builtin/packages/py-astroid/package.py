@@ -35,6 +35,6 @@ class PyAstroid(PythonPackage):
     version('1.4.2', '677f7965840f375af51b0e86403bee6a')
     version('1.4.1', 'ed70bfed5e4b25be4292e7fe72da2c02')
 
-    depends_on('py-logilab-common', type=nolink)
+    depends_on('py-logilab-common', type=('build', 'run'))
     depends_on('py-setuptools', type='build')
-    depends_on('py-six', type=nolink)
+    depends_on('py-six', type=('build', 'run'))

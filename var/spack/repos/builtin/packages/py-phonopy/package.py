@@ -33,7 +33,7 @@ class PyPhonopy(PythonPackage):
 
     version('1.10.0', '973ed1bcea46e21b9bf747aab9061ff6')
 
-    depends_on('py-numpy', type=nolink)
-    depends_on('py-scipy', type=nolink)
-    depends_on('py-matplotlib', type=nolink)
-    depends_on('py-pyyaml', type=nolink)
+    depends_on('py-numpy', type=('build', 'run'))
+    depends_on('py-scipy', type=('build', 'run'))
+    depends_on('py-matplotlib', type=('build', 'run'))
+    depends_on('py-pyyaml', type=('build', 'run'))

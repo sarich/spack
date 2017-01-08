@@ -34,4 +34,4 @@ class PyCclib(PythonPackage):
 
     version('1.5', 'c06940101c4796bce82036b13fecb73c')
 
-    depends_on('py-numpy@1.5:', type=nolink)
+    depends_on('py-numpy@1.5:', type=('build', 'run'))

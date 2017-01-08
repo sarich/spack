@@ -35,4 +35,4 @@ class PyPytest(PythonPackage):
             url="https://pypi.python.org/packages/2b/05/e20806c99afaff43331f5fd8770bb346145303882f98ef3275fa1dd66f6d/pytest-3.0.2.tar.gz")
 
     depends_on('py-setuptools', type='build')
-    depends_on('py-py@1.4.29:', type=nolink)
+    depends_on('py-py@1.4.29:', type=('build', 'run'))

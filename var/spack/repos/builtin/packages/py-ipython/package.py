@@ -34,5 +34,5 @@ class PyIpython(PythonPackage):
     version('2.3.1', '2b7085525dac11190bfb45bb8ec8dcbf')
     version('3.1.0', 'a749d90c16068687b0ec45a27e72ef8f')
 
-    depends_on('py-pygments', type=nolink)
-    depends_on('py-setuptools', type=nolink)
+    depends_on('py-pygments', type=('build', 'run'))
+    depends_on('py-setuptools', type=('build', 'run'))

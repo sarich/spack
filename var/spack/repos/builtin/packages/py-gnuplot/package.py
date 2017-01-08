@@ -33,4 +33,4 @@ class PyGnuplot(PythonPackage):
 
     version('1.8', 'abd6f571e7aec68ae7db90a5217cd5b1')
 
-    depends_on('py-numpy', type=nolink)
+    depends_on('py-numpy', type=('build', 'run'))

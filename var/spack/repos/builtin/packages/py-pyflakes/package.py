@@ -44,4 +44,4 @@ class PyPyflakes(PythonPackage):
 
     # Most Python packages only require py-setuptools as a build dependency.
     # However, py-pyflakes requires py-setuptools during runtime as well.
-    depends_on('py-setuptools', type=nolink)
+    depends_on('py-setuptools', type=('build', 'run'))

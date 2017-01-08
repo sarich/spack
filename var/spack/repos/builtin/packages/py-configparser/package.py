@@ -37,6 +37,6 @@ class PyConfigparser(PythonPackage):
 
     depends_on('python@2.6:2.7,3.4:')
 
-    depends_on('py-ordereddict', when='^python@2.6:2.6.999', type=nolink)
+    depends_on('py-ordereddict', when='^python@2.6:2.6.999', type=('build', 'run'))
 
     depends_on('py-setuptools', type='build')

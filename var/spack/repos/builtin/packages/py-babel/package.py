@@ -37,4 +37,4 @@ class PyBabel(PythonPackage):
             url="https://pypi.python.org/packages/6e/96/ba2a2462ed25ca0e651fb7b66e7080f5315f91425a07ea5b34d7c870c114/Babel-2.3.4.tar.gz")
 
     depends_on('py-setuptools', type='build')
-    depends_on('py-pytz',       type=nolink)
+    depends_on('py-pytz',       type=('build', 'run'))

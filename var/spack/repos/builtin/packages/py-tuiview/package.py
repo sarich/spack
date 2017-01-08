@@ -35,6 +35,6 @@ class PyTuiview(PythonPackage):
 
     version('1.1.7', '4b3b38a820cc239c8ab4a181ac5d4c30')
 
-    depends_on("py-pyqt", type=nolink)
-    depends_on("py-numpy", type=nolink)
+    depends_on("py-pyqt", type=('build', 'run'))
+    depends_on("py-numpy", type=('build', 'run'))
     depends_on("gdal")

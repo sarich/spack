@@ -37,12 +37,12 @@ class PySncosmo(PythonPackage):
     # Required dependencies
     # py-sncosmo binaries are duplicates of those from py-astropy
     extends('python', ignore=r'bin/.*')
-    depends_on('py-numpy', type=nolink)
-    depends_on('py-scipy', type=nolink)
-    depends_on('py-astropy', type=nolink)
+    depends_on('py-numpy', type=('build', 'run'))
+    depends_on('py-scipy', type=('build', 'run'))
+    depends_on('py-astropy', type=('build', 'run'))
 
     # Recommended dependencies
-    depends_on('py-matplotlib', type=nolink)
-    depends_on('py-iminuit', type=nolink)
-    depends_on('py-emcee', type=nolink)
-    depends_on('py-nestle', type=nolink)
+    depends_on('py-matplotlib', type=('build', 'run'))
+    depends_on('py-iminuit', type=('build', 'run'))
+    depends_on('py-emcee', type=('build', 'run'))
+    depends_on('py-nestle', type=('build', 'run'))

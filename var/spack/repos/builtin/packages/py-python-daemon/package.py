@@ -43,4 +43,4 @@ class PyPythonDaemon(PythonPackage):
     version('2.0.5', '73e7f49f525c51fa4a995aea4d80de41')
 
     depends_on("py-setuptools", type='build')
-    depends_on("py-lockfile", type=nolink)
+    depends_on("py-lockfile", type=('build', 'run'))

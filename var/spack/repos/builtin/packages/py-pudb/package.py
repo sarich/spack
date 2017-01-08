@@ -35,5 +35,5 @@ class PyPudb(PythonPackage):
     version('2016.2', '4573b70163329c1cb59836a357bfdf7c')
 
     depends_on('py-setuptools', type='build')
-    depends_on('py-urwid@1.1.1:', type=nolink)
-    depends_on('py-pygments@1.0:', type=nolink)
+    depends_on('py-urwid@1.1.1:', type=('build', 'run'))
+    depends_on('py-pygments@1.0:', type=('build', 'run'))

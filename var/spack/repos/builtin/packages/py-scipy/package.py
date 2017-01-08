@@ -43,7 +43,7 @@ class PyScipy(PythonPackage):
     depends_on('py-nose', type='build')
     # Known not to work with 2.23, 2.25
     depends_on('binutils@2.26:', type='build')
-    depends_on('py-numpy@1.7.1:+blas+lapack', type=nolink)
+    depends_on('py-numpy@1.7.1:+blas+lapack', type=('build', 'run'))
 
     # NOTE: scipy picks up Blas/Lapack from numpy, see
     # http://www.scipy.org/scipylib/building/linux.html#step-4-build-numpy-1-5-0

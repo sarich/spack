@@ -34,4 +34,4 @@ class PyEmcee(PythonPackage):
 
     version('2.1.0', 'c6b6fad05c824d40671d4a4fc58dfff7')
 
-    depends_on('py-numpy', type=nolink)
+    depends_on('py-numpy', type=('build', 'run'))
