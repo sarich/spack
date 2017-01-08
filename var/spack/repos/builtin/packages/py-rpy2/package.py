@@ -38,6 +38,7 @@ class PyRpy2(PythonPackage):
     version('2.5.4', '115a20ac30883f096da2bdfcab55196d')
     version('2.5.6', 'a36e758b633ce6aec6a5f450bfee980f')
 
+    depends_on('py-six', type=('build', 'run'))
     depends_on('py-setuptools', type='build')
 
     depends_on('R')

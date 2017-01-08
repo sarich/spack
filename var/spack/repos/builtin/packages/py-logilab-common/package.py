@@ -32,5 +32,6 @@ class PyLogilabCommon(PythonPackage):
 
     version('1.2.0', 'f7b51351b7bfe052746fa04c03253c0b')
 
+    extends('python', ignore=r'bin/pytest')
     depends_on("py-setuptools", type='build')
     depends_on("py-six", type=('build', 'run'))
