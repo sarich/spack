@@ -28,6 +28,8 @@ import inspect
 from spack.directives import extends
 from spack.package import PackageBase
 
+from llnl.util.filesystem import working_dir
+
 
 class PythonPackage(PackageBase):
     """Specialized class for packages that are built using Python
@@ -99,12 +101,18 @@ class PythonPackage(PackageBase):
         """Returns the name of the setup file to use."""
         return 'setup.py'
 
+    def build_directory(self):
+        """The directory containing the ``setup.py`` file."""
+        return self.stage.source_path
+
     def python(self, *args):
         inspect.getmodule(self).python(*args)
 
     def setup_py(self, *args):
         setup = self.setup_file(self.spec, self.prefix)
-        self.python(setup, '--no-user-cfg', *args)
+
+        with working_dir(self.build_directory()):
+            self.python(setup, '--no-user-cfg', *args)
 
     # The following phases and their descriptions come from:
     #   $ python setup.py --help-commands
